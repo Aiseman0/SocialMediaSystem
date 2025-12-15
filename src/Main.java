@@ -8,7 +8,7 @@ public class Main {public static void main(String[] args) {
     Post post1 = new Post("Hello world!", 45, true);
     Post post2 = new Post("Java is awesome!", 80, true);
 
-    // --- OUTPUT 1: Print info ---
+
     System.out.println("=== SOCIAL NETWORK STATUS ===");
     network.printInfo();
     profile1.printInfo();
@@ -16,7 +16,7 @@ public class Main {public static void main(String[] args) {
     post1.printInfo();
     post2.printInfo();
 
-    // --- OUTPUT 2: Compare posts (likes) ---
+
     System.out.println("\n=== POST COMPARISON ===");
 
     if (post1.getLikes() > post2.getLikes()) {
@@ -27,7 +27,7 @@ public class Main {public static void main(String[] args) {
         System.out.println("Both posts have the same number of likes.");
     }
 
-    // --- OUTPUT 3: Java Basics – count published posts ---
+
     System.out.println("\n=== COUNT PUBLISHED POSTS ===");
     int publishedCount = 0;
 
@@ -40,7 +40,7 @@ public class Main {public static void main(String[] args) {
 
     System.out.println("Published posts: " + publishedCount);
 
-    // --- OUTPUT 4: Array + for loop ---
+
     System.out.println("\n=== LOOP THROUGH PROFILES ===");
     Profile[] profiles = { profile1, profile2 };
 
