@@ -2,7 +2,7 @@ public class Main {public static void main(String[] args) {
 
     SocialNetwork network = new SocialNetwork("Instagram", 12000000);
 
-    Profile profile1 = new Profile("Aisulu", 70);
+    Profile profile1 = new Profile("Aisulu", 77);
     Profile profile2 = new Profile("Amina", 320);
 
     Post post1 = new Post("Hello world!", 45, true);
