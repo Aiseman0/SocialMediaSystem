@@ -1,4 +1,5 @@
-public class SocialNetwork {private String name;
+public class SocialNetwork {
+    private String name;
     private int activeUsers;
 
     public SocialNetwork() {

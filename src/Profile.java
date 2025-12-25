@@ -1,4 +1,5 @@
-public class Profile {private String username;
+public class Profile {
+    private String username;
     private int followers;
 
     public Profile() {
