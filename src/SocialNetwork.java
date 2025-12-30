@@ -1,29 +1,32 @@
-public class SocialNetwork {
-    private String name;
+import java.util.Objects;
+public class SocialNetwork extends SocialMediaEntity {
     private int activeUsers;
 
-    public SocialNetwork() {
-    }
 
     public SocialNetwork(String name, int activeUsers) {
-        this.name = name;
+        super(name);
         this.activeUsers = activeUsers;
-    }
-
-    public String getName() {
-        return name;
     }
 
     public int getActiveUsers() {
         return activeUsers;
     }
 
-    public void setActiveUsers(int activeUsers) {
-        this.activeUsers = activeUsers;
+    @Override
+    public void printInfo() {
+        System.out.println("SocialNetwork → Name: " + getName() + ", Active Users: " + activeUsers);
     }
 
-    public void printInfo() {
-        System.out.println("SocialNetwork → Name: " + name +
-                ", Active users: " + activeUsers);
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        SocialNetwork that = (SocialNetwork) obj;
+        return activeUsers == that.activeUsers && getName().equals(that.getName());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getName(), activeUsers);
     }
 }
