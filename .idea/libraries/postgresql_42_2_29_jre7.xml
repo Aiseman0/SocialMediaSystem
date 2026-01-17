@@ -2,6 +2,7 @@
   <library name="postgresql-42.2.29.jre7">
     <CLASSES>
       <root url="jar://$USER_HOME$/Downloads/postgresql-42.2.29.jre7.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/postgresql-42.7.9.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
