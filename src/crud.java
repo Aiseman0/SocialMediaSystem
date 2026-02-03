@@ -1,7 +1,7 @@
 import java.sql.*;
 import java.util.Scanner;
 
-public class crud{
+public class crud {
 
     public static void createPost(Connection connection) throws SQLException {
         Scanner scanner = new Scanner(System.in);
